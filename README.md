@@ -25,3 +25,55 @@ My project is a simple to-do list application. The front end is built using Reac
 
 I tried writing clean and understandable code throughout the project, ensuring readability. I'm looking forward to your feedback!
 
+## Installation
+Clone the project
+
+```bash
+git clone https://github.com/othmane099/todo_app.git
+```
+
+#### Backend
+Set up virtual environment
+
+```Bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+Install requirements
+
+```Bash
+pip install -r requirements.txt
+```
+Set up db_url in main.py
+
+
+```Bash
+register_tortoise(
+    app,
+    db_url='mysql://root:password@localhost/todo_db',
+    modules={"models": ["models"]},
+    generate_schemas=True,
+    add_exception_handlers=True
+)
+```
+Run the server
+
+
+```Bash
+python -m uvicorn main:app --reload
+```
+
+#### Frontend
+
+**Recommended Node.js v18.x.**
+
+Install Packages
+
+```
+yarn install
+```
+Start server
+```
+yarn dev
+```
+
