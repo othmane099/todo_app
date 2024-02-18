@@ -1,5 +1,5 @@
 ## About
-My project is a simple to-do list application. The front end is built using React, utilizing a template link. The backend is developed with Python, employing FastAPI. The application includes the following features:
+My project is a simple to-do list application. The front end is built using React, utilizing the template. The backend is developed with Python, employing FastAPI. The application includes the following features:
 
 - Users can create multiple lists by specifying the list name. Each list can contain different items (tasks), with each item having a title, priority (high, medium, low, or none), and due date.
   
