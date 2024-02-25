@@ -104,13 +104,6 @@ async def toggle_list_item_status(item_id: int):
     return {"message": "Item Status updated successfully", "data": item_obj}
 
 
-def convert_status(status: str):
-    if status == "Done":
-        return True
-    elif status == "Not Yet":
-        return False
-    return None
-
 
 @app.get("/lists/{list_id}/filter_items")
 async def get_list_filtered_items(list_id: int, priority: list = Query(None), status: str = None):
